@@ -13,6 +13,6 @@
     {{- if not .p1.IsHome -}}
         <li><span>/</span></li><li><a href="{{ .p1.Permalink }}">{{- .p1.Title -}}</a></li>
     {{- else -}}
-        <li><a href="{{ .p1.Permalink }}">Home</a></li>
+        <li><a href="{{ .p1.Permalink }}">{{ i18n "home" }}</a></li>
     {{- end -}}
 {{ end }}
